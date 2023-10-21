@@ -1,0 +1,22 @@
+.page__breadcrumb{
+    margin-bottom: 20px;
+}
+.page__breadcrumb ul{
+    padding: 0 10px;
+    margin: 0;
+}
+.page__breadcrumb li{
+    display: inline-block;
+    padding: 0 10px;
+    color: #f27fb5;
+}
+.page__breadcrumb a{
+    color: #f27fb5;
+    transition: 0.4s;
+}
+.page__breadcrumb a:hover{
+    color: #c675ea;
+}
+.page__breadcrumb span{
+    color: #c675ea;
+}

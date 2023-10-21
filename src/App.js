@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import HomeTemplate from './templates/HomeTemplate/HomeTemplate';
+import Home from './pages/Home/Home';
+import MangaPage from './pages/Home/MangaPage/MangaPage';
+import ReadingPage from './pages/Home/ReadingPage/ReadingPage';
+
+import PageNotFound from './pages/PageNotFound';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Toaster />
+      <Routes>
+        <Route path="*" element={<PageNotFound />} />
+        <Route element={<HomeTemplate />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/manga" element={<MangaPage />} />
+          <Route path="/manga/chapter" element={<ReadingPage />} />
+
+      </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

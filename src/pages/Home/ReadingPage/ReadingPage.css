@@ -1,0 +1,59 @@
+.reading__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reading__nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reading__title h3 {
+  color: #f27fb5;
+  font-size: 24px;
+}
+.bookmark__icon {
+  color: #f27fb5;
+  font-size: 30px;
+}
+.reading__button .manga__button {
+  border-radius: 0;
+  border-color: #f27fb5;
+  background-color: #f27fb5;
+  color: #fff;
+  margin-left: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.reading__button .manga__button:hover {
+  background-color: rgba(242, 127, 181, 0.3);
+  color: #f27fb5;
+}
+.reading__nav select {
+  min-width: 200px;
+  max-width: 50%;
+  height: 40px;
+  border: 2px solid #f27fb5;
+  padding: 7px;
+  color: #f27fb5;
+  background: rgba(242, 127, 181, 0.3);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fa__prev {
+  padding-right: 5px;
+}
+.fa__next {
+  padding-left: 5px;
+}
+.reading__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reading__img img {
+  display: block;
+  width: 100%;
+}

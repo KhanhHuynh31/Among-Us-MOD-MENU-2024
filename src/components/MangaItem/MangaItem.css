@@ -1,0 +1,115 @@
+.manga__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #f27fb5;
+  border-radius: 15px;
+  width: 100%;
+}
+.manga__item h3 {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.manga__item img {
+  width: 100%;
+}
+.hover__manga{
+  display: none;
+  z-index: 1;
+}
+.manga__item:hover .hover__manga{
+  display: block;
+
+}
+
+.hover__manga .manga__header{
+  position: fixed;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 6px 6px 30px 6px rgba(0,0,0,.2);
+  width: 500px;
+  height: 400px;
+
+}
+.hover__manga .manga__header h3{
+  margin: 0;
+
+}
+.hover__manga .info__text{
+  width: 100%;
+}
+
+.hover__manga .manga__intro img{
+ width: 150px;
+ height: 200px;
+
+}
+.start__rating {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 12px;
+}
+.checked {
+  color: orange;
+}
+.manga__genre {
+  align-items: center;
+  padding-right: 10px;
+}
+.genre__content {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 2px;
+}
+.list__genre {
+  color: #000;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.list__genre:hover {
+  color: #fff;
+}
+
+.newest_chapter {
+  padding: 6px;
+  border-radius: 14px;
+  transition: 0.4s;
+  background-color: #c675ea;
+  color: #fff;
+}
+.newest_chapter:hover {
+  background-color: #fff;
+  color: #f27fb5;
+}
+.chapter__date {
+  font-size: 14px;
+  padding-left: 5px;
+}
+.manga__item h3:hover{
+  color: #000;
+}
+
+.season__release {
+  margin-top: 12px;
+  padding-left: 20px;
+  display: flex;
+  min-width: 380px;
+  width: 30%;
+  gap: 10px;
+  flex-direction: column;
+}
+.season__release .header__title {
+  margin-bottom: 10px;
+}
+.season__release .manga__item .manga__pic{
+  height: 145px;
+  width: 120px;
+  padding-right: 20px;
+}
+.season__release .manga__item {
+  flex-direction: row;
+  width: 100%;
+}

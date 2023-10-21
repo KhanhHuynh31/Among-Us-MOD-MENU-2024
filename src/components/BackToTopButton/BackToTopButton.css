@@ -1,0 +1,48 @@
+.arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    bottom: 5px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.arrow::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: 5px 5px 0 0;
+    border-style: solid;
+    border-color: #c675ea;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+}
+
+
+.arrow:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 5px 0 0;
+    border-style: solid;
+    border-color: #f27fb5;
+    transform-origin: 100% 0;
+    transition: .2s ease;
+}
+
+.arrow:hover::after {
+    transform: rotate(45deg);
+    border-color: #f27fb5;
+    height: 120%;
+}
+
+.arrow:hover::before {
+    border-color: #f27fb5;
+    transform: scale(.8);
+
+}

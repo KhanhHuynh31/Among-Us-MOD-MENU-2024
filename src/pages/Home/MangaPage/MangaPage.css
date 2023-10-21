@@ -1,0 +1,184 @@
+.manga__header h3 {
+  color: #f27fb5;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.manga__intro {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.manga__intro img {
+  width: 300px;
+  height: 400px;
+}
+.manga__info {
+  width: 80%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.info__left {
+  display: flex;
+  height: 387px;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+}
+.info__right {
+  width: 30%;
+}
+.rating__value {
+  margin-left: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 40px;
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  position: relative;
+}
+.rating__value::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -4px;
+  border-radius: 2px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.info__block {
+  display: flex;
+  align-items: center;
+}
+.info__block p {
+  min-width: 100px;
+  font-weight: bold;
+}
+
+.info__text {
+  width: 100%;
+}
+
+.info__button a {
+  padding: 13px 26px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 15px;
+  background-color: #f27fb5;
+  border: 1px solid #f27fb5;
+  transition: 0.4s;
+}
+.info__button a:hover {
+  color: #f27fb5;
+  border-color: #f27fb5;
+  background-color: rgba(242, 127, 181, 0.3);
+}
+.info__function {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+.function__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.function__block span {
+  font-size: 30px;
+  color: #f27fb5;
+}
+.function__block p {
+  transition: 0.4s;
+}
+.function__block:hover p {
+  color: #c675ea;
+}
+.manga__about {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+.about__left {
+  width: 70%;
+}
+.about__right {
+  width: 30%;
+}
+.summary__content p {
+  padding-left: 10px;
+}
+.chapter__box {
+  list-style-type: none;
+  padding-left: 0;
+  height: 250px;
+  overflow-y: scroll;
+}
+.chapter__box .manga__chapter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.chapter__box .manga__chapter:hover {
+  color: unset;
+}
+
+.chapter__box li {
+  transition: 0.3s;
+}
+.chapter__box li:hover {
+  background-color: #f27fb5;
+}
+.comment__box {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.comment__avt img {
+  border-radius: 50%;
+}
+.comment__date {
+  color: #999;
+  font-size: 14px;
+}
+.comment__name {
+  color: #000;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.comment__button a {
+  display: inline-block;
+  padding: 5px 15px 3px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #ebebeb;
+  text-transform: uppercase;
+  margin-right: 5px;
+  transition: 0.4s;
+}
+.comment__button a:hover {
+  border-color: #d63384;
+  background-color: #d63384;
+  color: #ffffff;
+}
+.comment__reply {
+  margin-left: 70px;
+}
+.comment__form {
+  padding: 10px;
+}
+.comment__form p {
+  color: #888;
+  margin-bottom: 0;
+}
+.comment__form a {
+  color: #f27fb5;
+}

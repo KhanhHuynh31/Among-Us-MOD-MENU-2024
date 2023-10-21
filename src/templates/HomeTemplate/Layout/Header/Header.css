@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.header .active{
+  color: #c675ea ;
+}
+.header .active .pic__icon__color{
+  display: inline-block ;
+}
+.header .active .pic__icon{
+  display: none ;
+}
+.header__logo{
+  width: 250px;
+  transition: 0.4s;
+}
+.header__logo img{
+  width: 100%;
+}
+.pic__icon__color{
+  display: none;
+}
+.header__logo:hover{
+  transform: scale(1.1);
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu{
+  padding-left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header__menu li a {
+  font-weight: 800;
+  padding: 20px 19px;
+  display: block;
+  font-size: 16px;
+  color: #f27fb5;
+  transition: all linear .3s;
+  text-transform: uppercase;
+}
+.header__menu li a:hover{
+  color: #c675ea;
+}
+.header__menu li {
+  margin-right: 30px;
+  font-size: 20px;
+  display: inline-block;
+  pointer-events: auto;
+}
+.search__input {
+  width: 200px;
+  height: 24px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #f27fb5;
+  border: none;
+  border-bottom: solid 1px #f27fb5;
+}
+.search__input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.manga__button {
+  padding: 10px;
+  border: solid 1px #f27fb5;
+  color: #f27fb5;
+  border-radius: 18px;
+  transition: 0.4s;
+}
+
+.manga__button:hover {
+  background-color: #c675ea;
+  color: #fff;
+  border-color: #c675ea;
+}
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+}
+
+@media only screen and (max-width: 950px) {
+ 
+}
