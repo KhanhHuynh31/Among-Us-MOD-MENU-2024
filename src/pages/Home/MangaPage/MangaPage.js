@@ -62,25 +62,6 @@ export default function MangaPage() {
                   <span>Author(s) Chu dao manhua</span>
                 </div>
               </div>
-              <div className="info__button">
-                <NavLink
-                  to="/manga/chapter"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  Read First
-                </NavLink>
-
-                <NavLink
-                  to="/manga/chapter"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  Read First
-                </NavLink>
-              </div>
             </div>
             <div className="info__right">
               <div className="info__block">
@@ -107,6 +88,25 @@ export default function MangaPage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="info__button">
+          <NavLink
+            to="/manga/chapter"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Read Now
+          </NavLink>
+
+          <NavLink
+            to="/manga/chapter"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Read Lasted Chapter
+          </NavLink>
         </div>
       </div>
       <div className="manga__about">

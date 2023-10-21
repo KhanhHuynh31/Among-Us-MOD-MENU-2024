@@ -1,6 +1,6 @@
 .manga__header h3 {
   color: #f27fb5;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 20px;
 }
 .manga__intro {
@@ -20,7 +20,6 @@
 }
 .info__left {
   display: flex;
-  height: 387px;
   justify-content: space-between;
   flex-direction: column;
   width: 70%;
@@ -63,7 +62,10 @@
 .info__text {
   width: 100%;
 }
-
+.info__button {
+  text-align: center;
+  padding-top: 30px;
+}
 .info__button a {
   padding: 13px 26px;
   font-weight: 600;
@@ -102,13 +104,13 @@
 .manga__about {
   margin-top: 40px;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 .about__left {
-  width: 70%;
+  width: 60%;
 }
 .about__right {
-  width: 30%;
+  width: 40%;
 }
 .summary__content p {
   padding-left: 10px;
@@ -181,4 +183,41 @@
 }
 .comment__form a {
   color: #f27fb5;
+}
+@media only screen and (max-width: 950px) {
+  .manga__about {
+    flex-direction: column;
+  }
+  .about__left {
+    width: 100%;
+  }
+  .about__right {
+    width: 100%;
+  }
+  .manga__intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .manga__info {
+    padding-left: 0;
+    padding-top: 20px;
+
+    width: 100%;
+  }
+  .info__left {
+    width: 100%;
+  }
+  .season__release {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .manga__info {
+    flex-direction: column;
+  }
+  .info__right {
+    width: 100%;
+  }
 }
