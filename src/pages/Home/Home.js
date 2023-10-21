@@ -8,8 +8,6 @@ import MangaItem from "../../components/MangaItem/MangaItem";
 import MangaMenu from "../../components/MangaMenu/MangaMenu";
 
 import { Pagination } from "swiper/modules";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const renderSlide = () => {
@@ -60,29 +58,12 @@ export default function Home() {
                 </div>
               </Swiper>
             </div>
-            <div className="season__new">
-              <div className="header__title">
-                <h3>NEW SEASON</h3>
-              </div>
-              <div className="new__manga">
-                {MangaItem()}
-                {MangaItem()}
-                {MangaItem()}
-              </div>
-            </div>
-            <div className="read__more">
-              <a href="">Read more 
-              <FontAwesomeIcon className="arrow__right" icon={faArrowRight} />
-              </a>
-            </div>
+
           </div>
           <div className="season__release">
             <div className="header__title">
               <h3>Recent release</h3>
             </div>
-            {MangaItem()}
-            {MangaItem()}
-            {MangaItem()}
             {MangaItem()}
             {MangaItem()}
           </div>

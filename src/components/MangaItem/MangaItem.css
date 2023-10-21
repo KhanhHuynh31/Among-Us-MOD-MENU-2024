@@ -5,7 +5,9 @@
   background-color: #f27fb5;
   border-radius: 15px;
   width: 100%;
+  transition: 0.5s;
 }
+
 .manga__item h3 {
   color: #fff;
   transition: 0.4s;
@@ -112,4 +114,12 @@
 .season__release .manga__item {
   flex-direction: row;
   width: 100%;
+}
+@media only screen and (max-width: 1150px) {
+  .hover__manga{
+    display: none !important;
+  }
+  .manga__item:hover{
+    transform: scale(1.02);
+  }
 }

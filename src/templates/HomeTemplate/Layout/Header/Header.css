@@ -119,15 +119,16 @@
 }
 
 @media only screen and (max-width: 1366px) {
+  .container {
+    width: 95%;
+  }
   .header__menu li {
     margin-right: 0px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
-  .container {
-    width: 95%;
-  }
+
   .header__right {
     display: none;
   }

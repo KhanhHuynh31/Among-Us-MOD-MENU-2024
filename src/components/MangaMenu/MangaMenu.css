@@ -1,0 +1,115 @@
+.manga__list {
+  margin-top: 40px;
+}
+.list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.list__menu a {
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  color: #f27fb5;
+  background-color: #fbd8e9;
+  transition: 0.4s;
+}
+.list__menu a:hover {
+  color: #fff;
+  background-color: #f27fb5;
+}
+.list__menu .menu__active {
+  background-color: #f27fb5;
+  color: #fff;
+}
+.list__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.list__content .manga__item {
+  width: 23%;
+}
+.list__pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+.list__pagination a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f27fb5;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 1px solid #f27fb5;
+}
+.list__pagination a:hover {
+  background-color: #fbd8e9;
+  color: #f27fb5;
+  border-color: #f27fb5;
+}
+.list__pagination .page__active {
+  background-color: #c675ea;
+  border-color: #c675ea;
+}
+.read__more {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 10px;
+  transition: 0.4s;
+}
+.read__more a {
+  color: #f27fb5;
+  transition: 0.4s;
+}
+.arrow__right {
+  padding-left: 5px;
+}
+.read__more a:hover {
+  transform: scale(1.1);
+  color: #c675ea;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+  .list__content {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .list__content {
+    gap: 30px;
+  }
+  .list__content .manga__item {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .list__header {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+  }
+@media only screen and (max-width: 700px) {
+  .list__content {
+    gap: 20px;
+  }
+  .list__content .manga__item {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+    .list__menu a {
+        padding: 5px 10px;
+    }
+}
+

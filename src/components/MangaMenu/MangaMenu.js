@@ -1,5 +1,6 @@
 import React from 'react'
 import MangaItem from "../MangaItem/MangaItem";
+import "./MangaMenu.css";
 
 export default function MangaMenu() {
   return (
@@ -10,7 +11,6 @@ export default function MangaMenu() {
           </div>
           <div className="list__menu">
             <a href="">recently updated</a>
-            <a href="">trending</a>
             <a href="">most viewed</a>
             <a href="" className="menu__active">
               top rated
