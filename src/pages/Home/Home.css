@@ -246,4 +246,15 @@
   transform: scale(1.1);
   color: #c675ea;
 }
+/* RESPONSIVE */
 
+@media only screen and (max-width: 1366px) {
+
+}
+@media only screen and (max-width: 1250px) {
+
+}
+
+@media only screen and (max-width: 950px) {
+
+}

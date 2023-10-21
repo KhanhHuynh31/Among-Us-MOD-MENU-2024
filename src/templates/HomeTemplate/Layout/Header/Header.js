@@ -12,25 +12,22 @@ export default function Header() {
   return (
     <div>
       <div className="header">
+        <div className="header__top">
+          <NavLink
+            to="/home"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            <div className="header__logo">
+              <img className="pic__icon" src={picIconHori}></img>
+              <img className="pic__icon__color" src={picIconHoriColor}></img>
+            </div>
+          </NavLink>
+        </div>
         <div className="header__bottom">
           <div className="header__left">
             <ul className="header__menu">
-              <li className="list__item">
-                <NavLink
-                  to="/home"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  <div className="header__logo">
-                    <img className="pic__icon" src={picIconHori}></img>
-                    <img
-                      className="pic__icon__color"
-                      src={picIconHoriColor}
-                    ></img>
-                  </div>
-                </NavLink>
-              </li>
               <li className="list__item">
                 <NavLink
                   to="/manga"
@@ -62,6 +59,38 @@ export default function Header() {
                 </a>
               </li>
             </ul>
+            <div className="dropdown__content">
+              <li className="list__item">
+                <NavLink
+                  to="/manga"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Manga
+                </NavLink>
+              </li>
+              <li className="list__item">
+                <NavLink
+                  to="/manga/chapter"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  chapter
+                </NavLink>
+              </li>
+              <li className="list__item">
+                <a
+                  onClick={() => {
+                    dispatch(LoginModalAction(true));
+                  }}
+                  className="menu__link button__modal "
+                >
+                  login
+                </a>
+              </li>
+            </div>
           </div>
           <div className="header__right">
             <span className="home__search">
