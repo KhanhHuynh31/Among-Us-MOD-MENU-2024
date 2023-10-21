@@ -53,7 +53,59 @@
   flex-direction: column;
   align-items: center;
 }
+.reading__content {
+  width: 100%;
+}
 .reading__img img {
   display: block;
   width: 100%;
+}
+.translate__img {
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  border: 2px solid #f27fb5;
+
+}
+.toggle__sub{
+  position: fixed;
+  bottom: 70px;
+  right: 22px;
+  color: #c675ea;
+  background-color: #fff;
+  border: 1px solid #c675ea;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+.toggle__sub:hover{
+  background-color: #f27fb5;
+  color: #fff;
+}
+.popup__button .active{
+  background-color: #f27fb5;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .reading__nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reading__nav select{
+    max-width: 100%;
+  }
+
 }
