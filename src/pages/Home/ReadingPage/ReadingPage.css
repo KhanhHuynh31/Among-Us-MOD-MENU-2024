@@ -95,10 +95,31 @@
   background-color: #f27fb5;
   color: #fff;
 }
-.popup__button .active{
+.active .manga__button{
   background-color: #f27fb5;
   color: #fff;
 }
+.popup__button .active{
+  background-color: #f27fb5;
+  color: #fff;
+  border-color: #f27fb5;
+
+}
+.toggle__button{
+  display: inline-block;
+}
+.reading__nav .reading__button .toggle__button button{
+  color: #c675ea;
+  background-color: #fff ;
+  border: 1px solid #c675ea;
+  transition: 0.5s;
+}
+.reading__nav .reading__button  .toggle__button .active{
+  background-color: #f27fb5 ;
+  color: #fff;
+  border-color: #f27fb5;
+}
+
 @media only screen and (max-width: 600px) {
   .reading__nav{
     flex-direction: column;

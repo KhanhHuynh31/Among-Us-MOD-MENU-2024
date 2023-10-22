@@ -18,6 +18,16 @@ export default function ReadingPage() {
           <option>Chapter 1 - The Beginning of Everything </option>
         </select>
         <div className="reading__button">
+          <div className="toggle__button">
+            <button
+              className={toggleCC ? "active manga__button" : "manga__button"}
+              onClick={() => {
+                settoggleCC(!toggleCC);
+              }}
+            >
+              CC
+            </button>
+          </div>
           <a href="" className="manga__button">
             <FontAwesomeIcon className="fa__prev" icon={faArrowLeft} />
             Prev

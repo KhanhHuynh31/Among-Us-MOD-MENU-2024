@@ -112,6 +112,9 @@
 .about__right {
   width: 40%;
 }
+.manga__about .season__release {
+  width: 100%;
+}
 .summary__content p {
   padding-left: 10px;
 }

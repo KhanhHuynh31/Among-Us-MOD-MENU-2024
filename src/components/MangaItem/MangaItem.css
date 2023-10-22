@@ -99,7 +99,7 @@
   margin-top: 12px;
   padding-left: 20px;
   display: flex;
-  width: 30%;
+  width: 40%;
   gap: 10px;
   flex-direction: column;
 }
@@ -122,6 +122,11 @@
   .manga__item:hover{
     transform: scale(1.02);
   }
+  .season__release .manga__item {
+    flex-direction: row;
+    width: 100%;
+  }
+
 }
 @media only screen and (max-width: 450px) {
   

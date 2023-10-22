@@ -9,12 +9,10 @@ import { NavLink } from "react-router-dom";
 import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
 
 export default function MangaPage() {
-  const [rating, setRating] = useState(0); // initial rating value
+  const [rating, setRating] = useState(0); 
 
-  // Catch Rating value
   const handleRating = (rate) => {
     setRating(rate);
-    // Some logic
   };
   return (
     <div className="manga__page">
@@ -34,9 +32,8 @@ export default function MangaPage() {
                   transition
                   fillColor="orange"
                   emptyColor="gray"
-                  className="foo" // Will remove the inline style if applied
+                  className="foo"
                 />
-                {/* Use rating value */}
                 <span className="rating__value">{rating}</span>
                 <div className="info__block">
                   <p>Rating</p>
