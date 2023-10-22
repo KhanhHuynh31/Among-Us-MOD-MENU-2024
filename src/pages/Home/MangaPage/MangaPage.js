@@ -96,7 +96,7 @@ export default function MangaPage() {
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-            Read Now
+            Read First
           </NavLink>
 
           <NavLink
@@ -105,7 +105,7 @@ export default function MangaPage() {
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-            Read Lasted Chapter
+            Read Last
           </NavLink>
         </div>
       </div>

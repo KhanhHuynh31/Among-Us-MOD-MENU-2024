@@ -86,6 +86,7 @@
   background-color: #fff;
   color: #f27fb5;
 }
+
 .chapter__date {
   font-size: 14px;
   padding-left: 5px;
@@ -98,7 +99,6 @@
   margin-top: 12px;
   padding-left: 20px;
   display: flex;
-  min-width: 380px;
   width: 30%;
   gap: 10px;
   flex-direction: column;
@@ -121,5 +121,16 @@
   }
   .manga__item:hover{
     transform: scale(1.02);
+  }
+}
+@media only screen and (max-width: 450px) {
+  
+  .chapter__date {
+    display: none;
+    
+  }
+  .newest_chapter{
+    display: flex;
+    justify-content: center;
   }
 }

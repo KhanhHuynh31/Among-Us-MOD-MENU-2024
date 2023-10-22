@@ -104,16 +104,16 @@ export default function MangaItem() {
             </a>
           </div>
         </div>
-        <NavLink
-          to="/manga/chapter"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : "newest_chapter"
-          }
-        >
-          Chapter 1
-        </NavLink>
-        <span className="chapter__date">7/15/2023</span>
-      </div>
+          <NavLink
+            to="/manga/chapter"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : "newest_chapter"
+            }
+          >
+            Chapter 1
+          </NavLink>
+          <span className="chapter__date">7/15/2023</span>
+        </div>
       <div className="hover__manga">
         <div
           className="manga__header"
