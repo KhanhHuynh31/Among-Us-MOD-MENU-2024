@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
 
 export default function MangaPage() {
-  const [rating, setRating] = useState(0); 
+  const [rating, setRating] = useState(0);
 
   const handleRating = (rate) => {
     setRating(rate);
@@ -18,9 +18,9 @@ export default function MangaPage() {
     <div className="manga__page">
       {Breadcrumb()}
       <div className="manga__header">
-        <h3>The Boy in the All-Girls School</h3>
+        <h3>Teaching the Tyrant Manners</h3>
         <div className="manga__intro">
-          <img src="https://yae.hifive03.com/assets/img/manga_single/single1.jpg"></img>
+          <img src="https://i.postimg.cc/X7vZzMFV/Teaching-the-Tyrant-Manners.webp"></img>
           <div className="manga__info">
             <div className="info__left">
               <div className="info__text">
@@ -41,14 +41,11 @@ export default function MangaPage() {
                 </div>
                 <div className="info__block">
                   <p>Alternative</p>
-                  <span>
-                    女子学院的男生 ; Boy in A Girls' School ; Nuzi Xueyuan de
-                    Nansheng
-                  </span>
+                  <span>폭군에게 예의를 가르칩니다</span>
                 </div>
                 <div className="info__block">
                   <p>Author(s)</p>
-                  <span>Sikinbungeo</span>
+                  <span>Haila</span>
                 </div>
                 <div className="info__block">
                   <p>Genre(s)</p>
@@ -63,14 +60,14 @@ export default function MangaPage() {
             <div className="info__right">
               <div className="info__block">
                 <p>Release</p>
-                <span>2022</span>
+                <span>2023</span>
               </div>
               <div className="info__block">
                 <p>Status</p>
                 <span>On going</span>
               </div>
               <div className="info__function">
-                <a href="" className="function__block">
+                <a href="#comment__box" className="function__block">
                   <span>
                     <FontAwesomeIcon icon={faComments} />
                   </span>
@@ -113,10 +110,7 @@ export default function MangaPage() {
               <h3>summary</h3>
             </div>
             <p>
-              In an all-girls school full of jaw-dropping beauties, a male
-              student suddenly transfers in!!! Perhaps in the eyes of others,
-              this would be a dream-like paradise, but in reality, the future is
-              completely unimaginable
+            I came into the world of a novel I was reading, and became an unknown extra destined for a miserable life. Teaching manners to a crazy bastard who turns into a tyrant? Manners, my ass! Quick thinking was my only means of survival. I tried everything to prevent such a tragic relationship with the tyrant from happening. I kicked, punched and screamed my head off, but I was still beaten in the end. Actually, he’s unexpectedly docile at times and even told me, “You’re the first person who understands me.” The male lead’s personality is strange. “Anyway, you shouldn’t do that to a woman.” “Isn’t it okay to kiss in a bind?” “No! I meant that you can’t kiss someone without their permission.” Somewhat miffed, Croft then gave a mischievous grin as he approached her. Bending down to Rivi’s eye level, he asked in a soft voice with glimmering red eyes, “So you’re saying there’s no problem if you give me permission?” After hearing his words, Rivier’s heart pounded in trepidation. Tugging at her hand, he held it tightly, pulling his elbow as far as he could, before he stretched his arm out like a bow.
             </p>
           </div>
           <div className="chapter__content">
@@ -162,7 +156,7 @@ export default function MangaPage() {
                   </p>
                 </form>
               </div>
-              <div className="comment__box">
+              <div id="comment__box" className="comment__box">
                 <div className="comment__avt">
                   <img src={commentPic}></img>
                 </div>

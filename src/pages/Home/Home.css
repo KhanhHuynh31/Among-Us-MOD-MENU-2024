@@ -109,6 +109,7 @@
 
 .slide__img {
   border-radius: 10px;
+  max-height: 820px;
 }
 .slide__content {
   position: relative;

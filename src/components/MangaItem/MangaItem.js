@@ -64,7 +64,7 @@ export default function MangaItem() {
       >
         <img
           className="manga__pic"
-          src="https://coffeemanga.io/wp-content/uploads/2023/06/ad62ce15378fd99681a0a60bd513aca39a0006d2_1991_2864_979585-175x238.jpeg"
+          src="https://i.postimg.cc/X7vZzMFV/Teaching-the-Tyrant-Manners.webp"
         ></img>
       </NavLink>
       <div className="item__about">
@@ -104,24 +104,24 @@ export default function MangaItem() {
             </a>
           </div>
         </div>
-          <NavLink
-            to="/manga/chapter"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : "newest_chapter"
-            }
-          >
-            Chapter 1
-          </NavLink>
-          <span className="chapter__date">7/15/2023</span>
-        </div>
+        <NavLink
+          to="/manga/chapter"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : "newest_chapter"
+          }
+        >
+          Chapter 1
+        </NavLink>
+        <span className="chapter__date">7/15/2023</span>
+      </div>
       <div className="hover__manga">
         <div
           className="manga__header"
           style={{ left: mousePos.x + 20, top: mousePos.y }}
         >
-          <h3>The Youngest Princess</h3>
+          <h3>Teaching the Tyrant Manners</h3>
           <div className="manga__intro">
-            <img src="https://coffeemanga.io/wp-content/uploads/2023/06/ad62ce15378fd99681a0a60bd513aca39a0006d2_1991_2864_979585-175x238.jpeg"></img>
+            <img src="https://i.postimg.cc/X7vZzMFV/Teaching-the-Tyrant-Manners.webp"></img>
             <div className="manga__info">
               <div className="info__text">
                 <Rating
@@ -138,10 +138,7 @@ export default function MangaItem() {
                 <span className="rating__value">{4}</span>
                 <div className="info__block">
                   <p>Alternative</p>
-                  <span>
-                    女子学院的男生 ; Boy in A Girls' School ; Nuzi Xueyuan de
-                    Nansheng
-                  </span>
+                  <span>폭군에게 예의를 가르칩니다</span>
                 </div>
                 <div className="info__block">
                   <p>Author(s)</p>
@@ -158,10 +155,11 @@ export default function MangaItem() {
             <b>Summary</b>
           </p>
           <span>
-            In an all-girls school full of jaw-dropping beauties, a male student
-            suddenly transfers in!!! Perhaps in the eyes of others, this would
-            be a dream-like paradise, but in reality, the future is completely
-            unimaginable
+            I came into the world of a novel I was reading, and became an
+            unknown extra destined for a miserable life. Teaching manners to a
+            crazy bastard who turns into a tyrant? Manners, my ass! Quick
+            thinking was my only means of survival. I tried everything to
+            prevent such a tragic relationship with the tyrant from happening.
           </span>
         </div>
       </div>

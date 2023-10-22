@@ -16,7 +16,7 @@ export default function Home() {
         <div className="slide__content">
           <img
             className="slide__img"
-            src={"https://yae.hifive03.com/assets/img/manga_banner/banner1.jpg"}
+            src={"https://i.postimg.cc/X7vZzMFV/Teaching-the-Tyrant-Manners.webp"}
             alt="slide_image"
           />
           <div className="slide__info">
@@ -64,6 +64,8 @@ export default function Home() {
             <div className="header__title">
               <h3>Recent release</h3>
             </div>
+            {MangaItem()}
+            {MangaItem()}
             {MangaItem()}
             {MangaItem()}
           </div>

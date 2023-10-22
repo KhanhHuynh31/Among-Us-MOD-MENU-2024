@@ -40,20 +40,18 @@ export default function ReadingPage() {
       </div>
     );
   };
-  const renderReadingImg = () => {
+  const renderReadingImg = (link) => {
     return (
       <div className="reading__content">
         <div className="reading__img">
-          <img src="https://yae.hifive03.com/assets/img/chapter/chapter00/2.jpg"></img>
+          <img src={link}></img>
         </div>
         <div
           className="translate__img"
           contenteditable="true"
           style={{ display: toggleCC ? "block" : "none" }}
         >
-          Trường THPT Thành Phố Chong Nam là một trường nữ sinh Không chỉ việc
-          giáo dục tuyệt vời, hầu hết học sinh đều xinh đẹp và lớp học rất tốt,
-          nơi đây là thiên đường với những đứa con trai
+         Không quan trọng tôi nghĩ như thế nào, tôi nghĩ tôi đã xuyên vào một cuốn tiểu thuyết
         </div>
       </div>
     );
@@ -72,10 +70,10 @@ export default function ReadingPage() {
           {renderReadingNav()}
         </div>
         <div className="reading__body">
-          {renderReadingImg()}
-          {renderReadingImg()}
-          {renderReadingImg()}
-          {renderReadingImg()}
+          {renderReadingImg("https://i.postimg.cc/kgnmRr83/01.jpg")}
+          {renderReadingImg("https://i.postimg.cc/mrWgRKc1/02.webp")}
+          {renderReadingImg("https://i.postimg.cc/9XgXzDRh/03.webp")}
+          {renderReadingImg("https://i.postimg.cc/ZnQJQQtR/04.webp")}
         </div>
         {renderReadingNav()}
       </div>

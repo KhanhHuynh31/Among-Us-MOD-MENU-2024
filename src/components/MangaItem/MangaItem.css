@@ -31,7 +31,7 @@
   padding: 20px;
   box-shadow: 6px 6px 30px 6px rgba(0,0,0,.2);
   width: 500px;
-  height: 400px;
+  height: auto;
 
 }
 .hover__manga .manga__header h3{
