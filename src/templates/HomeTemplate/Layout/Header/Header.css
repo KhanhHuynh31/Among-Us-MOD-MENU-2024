@@ -32,6 +32,7 @@
 }
 .header__menu {
   padding-left: 0;
+  margin: 0;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -47,6 +48,9 @@
 }
 .header__menu li a:hover {
   color: #c675ea;
+}
+.dropdown__content .header__menu li a:hover {
+  color: #fff;
 }
 .header__menu li {
   margin-right: 30px;
@@ -114,7 +118,6 @@
   background-color: #c675ea;
 }
 .dropdown__content .active {
-  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -128,7 +131,6 @@
 }
 
 @media only screen and (max-width: 1150px) {
-
   .header__right {
     display: none;
   }
@@ -152,8 +154,11 @@
   .dropdown__content {
     display: block;
   }
-  .header__menu {
+  .header__left {
     display: none;
+  }
+  .header__menu {
+    display: block;
   }
   .header__menu li a {
     padding: 10px 12px;

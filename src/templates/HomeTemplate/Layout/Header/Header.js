@@ -9,6 +9,53 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const dispatch = useDispatch();
+  const renderListHeader = () => {
+    return (
+      <ul className="header__menu">
+        <li className="list__item">
+          <NavLink
+            to="/manga"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Manga
+          </NavLink>
+        </li>
+        <li className="list__item">
+          <NavLink
+            to="/manga/chapter"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            chapter
+          </NavLink>
+        </li>
+        <li className="list__item">
+          <NavLink
+            to="/admin"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            Admin
+          </NavLink>
+        </li>
+        <li className="list__item">
+          <a
+            onClick={() => {
+              dispatch(LoginModalAction(true));
+            }}
+            className="menu__link button__modal"
+          >
+            login
+          </a>
+        </li>
+        
+      </ul>
+    );
+  };
   return (
     <div>
       <div className="header">
@@ -26,72 +73,7 @@ export default function Header() {
           </NavLink>
         </div>
         <div className="header__bottom">
-          <div className="header__left">
-            <ul className="header__menu">
-              <li className="list__item">
-                <NavLink
-                  to="/manga"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  Manga
-                </NavLink>
-              </li>
-              <li className="list__item">
-                <NavLink
-                  to="/manga/chapter"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  chapter
-                </NavLink>
-              </li>
-              <li className="list__item">
-                <a
-                  onClick={() => {
-                    dispatch(LoginModalAction(true));
-                  }}
-                  className="menu__link button__modal"
-                >
-                  login
-                </a>
-              </li>
-            </ul>
-            <div className="dropdown__content">
-              <li className="list__item">
-                <NavLink
-                  to="/manga"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  Manga
-                </NavLink>
-              </li>
-              <li className="list__item">
-                <NavLink
-                  to="/manga/chapter"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                >
-                  chapter
-                </NavLink>
-              </li>
-              <li className="list__item">
-                <a
-                  onClick={() => {
-                    dispatch(LoginModalAction(true));
-                  }}
-                  className="menu__link button__modal "
-                >
-                  login
-                </a>
-              </li>
-            </div>
-          </div>
+          <div className="header__left">{renderListHeader()}</div>
           <div className="header__right">
             <span className="home__search">
               <form>
@@ -102,6 +84,7 @@ export default function Header() {
               </form>
             </span>
           </div>
+          <div className="dropdown__content">{renderListHeader()}</div>
         </div>
       </div>
     </div>

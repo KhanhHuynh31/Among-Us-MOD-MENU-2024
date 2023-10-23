@@ -9,6 +9,9 @@ import Login from "../../pages/Home/Account/Login";
 export default function HomeTemplate() {
   return (
     <Fragment>
+      <script>
+      var sakura = new Sakura('body');
+    </script>
         <Login />
         <Scrolling/>
       <div className="container">
@@ -18,5 +21,6 @@ export default function HomeTemplate() {
       </div>
       <Footer />
     </Fragment>
+    
   );
 }
