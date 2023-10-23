@@ -5,7 +5,12 @@ import {
   faBookmark,
   faArrowLeft,
   faArrowRight,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPenToSquare,
+  faFlag,
+} from "@fortawesome/free-regular-svg-icons";
 import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
 
 export default function ReadingPage() {
@@ -51,7 +56,12 @@ export default function ReadingPage() {
           contenteditable="true"
           style={{ display: toggleCC ? "block" : "none" }}
         >
-         Không quan trọng tôi nghĩ như thế nào, tôi nghĩ tôi đã xuyên vào một cuốn tiểu thuyết
+         <span>Không quan trọng tôi nghĩ như thế nào, tôi nghĩ tôi đã xuyên vào một cuốn tiểu thuyết</span>
+          <div className="translate__button">
+              <button data-balloon="Save" data-balloon-pos="up"><FontAwesomeIcon icon={faCheck} /></button>
+              <button data-balloon="Edit" data-balloon-pos="up"><FontAwesomeIcon icon={faPenToSquare} /></button>
+              <button data-balloon="Report" data-balloon-pos="up"><FontAwesomeIcon icon={faFlag} /></button>
+          </div>
         </div>
       </div>
     );
