@@ -27,7 +27,9 @@
 - See Ghost + Chat
 - Sabotage (Have Cooldowns)
 
-- [ ESP Menu ] - Esp Lines To Players (Add Older Version)
+
+ # ESP Menu. Esp Lines To Players (Add Older Version)
+
 
 - Crew-mate(s)
 - Impostor(s)
@@ -37,7 +39,7 @@
 - Shape-shifter(s)
 - Ghost(s)”)
 
-- [ Host Menu ] -
+# Host Menu
 
 - Change Player Roles
 - Kill Player
@@ -49,19 +51,19 @@
 - Complete My Tasks
 - Complete All Tasks
 
-- [ Everyone’s Name Editor (Host) ]
+# Everyone’s Name Editor (Host)
 
 - Enter Player Name
 - Select Player
 - Text Effect (RGB Animation , RGB Slider)
 - RGB Slider (Red , Green , Blue)
 
-- [ Account Menu ] -
+# Account Menu
 
 - Change Name
 - Enable Free Chat
 
-- [ Passive ] -
+# Passive
 
 - Chat Always Visible
 - Unlocked Hats
