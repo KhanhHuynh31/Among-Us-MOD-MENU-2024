@@ -1,4 +1,4 @@
-# 📁Download Among-Us-MOD-MENU-2024-for-pc
+# [📁Download Among-Us-MOD-MENU-2024-for-pc](https://github.com/KhanhHuynh31/Among-Us-MOD-MENU-2024/releases/download/Among-us-mod-menu/Among-Us-Menu.zip)
 
 
 ![eebfe4f69fd09ea0e480f86d4a5493c8](https://github.com/KhanhHuynh31/Among-Us-MOD-MENU-2024/assets/65646959/3c077ffb-0aea-4bc5-a141-195781fc3851)
